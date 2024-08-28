@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 
@@ -18,5 +19,19 @@ Route::get('/business-telecom-and-broadband', [HomeController::class, 'businesst
 Route::get('/business-finance', [HomeController::class, 'businessfinance']);
 Route::get('/business-merchants-solution', [HomeController::class, 'businessmerchantssolution']);
 
-Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('/register', [AuthController::class, 'registers']);
+Route::post('/register_user', [AuthController::class, 'store']);
+Route::get('/login', [AuthController::class, 'logins']);
+Route::post('login_user', [AuthController::class, 'login']);
+
+// Logout Route
+Route::post('logout', [AuthController::class, 'logout'])->name('logout');
+
+// Route::get('/dashboard', [DashboardController::class, 'index']);
+Route::get('dashboard', function () {
+    // Add your dashboard logic here
+    return view('dashboard');
+})->middleware('auth');
+
+
 Route::get('/message', [DashboardController::class, 'message_list']);
