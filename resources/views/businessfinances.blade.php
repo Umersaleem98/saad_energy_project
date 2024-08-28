@@ -56,13 +56,13 @@
         <div class="row g-5 mt-5">
                 <div class="col-md-6 order-2 order-md-1">
                     <!-- <h2>Water Suppliers</h2> -->
-                    <p>
+                    <p class="mt-5">
                     When you’re setting up or growing a business, you may need loan finance to help with the costs. A business loan is different from a personal loan in that you will need to provide information about your business, its turnover and its profit. Business loans can be short term or long term, but all involve paying a set amount of interest on a lump sum borrowing amount. Different loans are available for different circumstances, so it helps to have a clear idea of exactly what you need the money for before you compare business finance loans.
                     </p>
                 
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-652d50060c10e.jpg" class="img-fluid rounded w-100" alt="" style="height: 340px; object-fit: cover;">
                 </div>
             </div>
             <!-- Second Row Start -->

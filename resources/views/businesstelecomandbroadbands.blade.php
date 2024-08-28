@@ -32,11 +32,11 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-653976a5c9166.jpg" class="img-fluid rounded w-100" alt="" style="height: 350px; object-fit: cover;">
                 </div>
                 <div class="col-md-6">
-                    <h2>Finding the right provider</h2>
-                    <p>
+                    <h2 class="mt-3">Finding the right provider</h2>
+                    <p class="mt-4">
                     With many broadband providers available across the UK, there are usually many options when searching for a new deal.
                     </p>
                     <p>
@@ -77,7 +77,7 @@
                   
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-6539774180d6f.jpg" class="img-fluid rounded w-100" alt="" style="height: 500px; object-fit: cover;">
                 </div>
             </div>
             <!-- Second Row End -->

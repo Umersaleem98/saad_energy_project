@@ -64,7 +64,7 @@
     <div class="row">
         <div class="col-md-6">
             <div class="card h-100 p-3">
-                <img src="home/img/about-img.jpg" class="card-img-top img-fluid hover-effect" alt="Card Image">
+                <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1440504624-612x612-1.jpg" class="card-img-top img-fluid hover-effect" alt="Card Image">
                 <div class="card-body">
                     <h5 class="card-title text-center mb-3 p-2">Start-up brokers</h5>
                     <p class="card-text">Offer your customers additional cost-saving services. We’re constantly scanning the markets to help business customers find the best energy contracts, and we can do it for your customer base too. Not only will this reduce their utility bills but it will also generate commission and customer loyalty for you. We already work with a variety of buying groups, franchise organisations, and individual companies who simply connect us to their customers or provide our services, with a little help from us.</p>
@@ -73,7 +73,7 @@
         </div>
         <div class="col-md-6">
             <div class="card h-100 p-3">
-                <img src="home/img/about-img.jpg" class="card-img-top img-fluid hover-effect" alt="Card Image">
+                <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1456339578-612x612-1.jpg" class="card-img-top img-fluid hover-effect" alt="Card Image">
                 <div class="card-body">
                     <h5 class="card-title text-center mb-3 p-2">Established energy consultants</h5>
                     <p class="card-text">Once you are a Global Utilities Marketing partner, you can receive a regular income based on sales achieved. We make it easy for you to track the progress of your sales with regular system-generated reports sent directly to you. Connect us to your customers or members that will be interested in our services and we will effortlessly ensure that you generate additional income from your contacts and, at the same time, your customers will benefit from great energy and water prices.</p>

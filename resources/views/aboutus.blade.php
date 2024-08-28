@@ -64,7 +64,7 @@
                     <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
                         <div class="about-img">
                             <div class="img-1">
-                                <img src="home/img/about-img.jpg" class="img-fluid rounded h-100 w-100" alt="">
+                                <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1352603244-612x612-1.jpg" class="img-fluid rounded h-100 w-100" alt="">
                             </div>
                             
                         </div>

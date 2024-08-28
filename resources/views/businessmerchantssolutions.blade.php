@@ -8,7 +8,7 @@
 <body>
 
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 border-0 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -57,13 +57,13 @@
                    
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-65399079377e0.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
                 </div>
             </div>
             <!-- Second Row End -->
             <div class="row g-5 mt-4 mb-5">
                 <div class="col-md-6">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-6539913fabbad.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
                 </div>
                 <div class="col-md-6">
                     <h2>Who are they ideal for?</h2>
@@ -90,42 +90,41 @@
     <!-- Contact End -->
   
     <div class="container mt-2 mb-5">
-    <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Card Machine</h5>
-                    <p class="card-text">TFrom countertop, portable to mobile, we’ve a machine to suit your business.</p>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Card Machine</h5>
+                        <p class="card-text">From countertop, portable to mobile, we’ve a machine to suit your business.</p>
+                    </div>
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com_-65398e52166ac-removebg-preview.png" class="card-img-bottom img-fluid mt-5 p-2" alt="Image 1" style="height: 200px; object-fit: cover;">
                 </div>
-                <img src="image1.jpg" class="card-img-bottom" alt="Image 1">
             </div>
-        </div>
-        
-        <!-- Card 2 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">Online Payments</h5>
-                    <p class="card-text">Payment gateway, pay by link, payment app or virtual terminal. We have a range of options to suit your needs.</p>
+            
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Payments</h5>
+                        <p class="card-text">Payment gateway, pay by link, payment app or virtual terminal. We have a range of options to suit your needs.</p>
+                    </div>
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/online-payment-3-removebg-preview.png" class="card-img-bottom img-fluid mt-5 p-2" alt="Image 2" style="height: 200px; ">
                 </div>
-                <img src="image2.jpg" class="card-img-bottom" alt="Image 2">
             </div>
-        </div>
-        
-        <!-- Card 3 -->
-        <div class="col-md-4 mb-4">
-            <div class="card h-100">
-                <div class="card-body">
-                    <h5 class="card-title">POS Systems</h5>
-                    <p class="card-text">POS Systems is an all in one point of sale system built for independent businesses to help them make smart decisions.</p>
+            
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">POS Systems</h5>
+                        <p class="card-text">POS Systems is an all-in-one point-of-sale system built for independent businesses to help them make smart decisions.</p>
+                    </div>
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/pngwing.com-2-768x585.png" class="card-img-bottom img-fluid mt-5 p-2" alt="Image 3" style="height: 200px;">
                 </div>
-                <img src="image3.jpg" class="card-img-bottom" alt="Image 3">
             </div>
         </div>
     </div>
-</div>
-
 
     @include('pages.footer')
 

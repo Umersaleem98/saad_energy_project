@@ -30,7 +30,7 @@
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-md-6">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/GetPaidStock.com-652f04d26a8e6.jpg" class="img-fluid rounded w-100" alt="" style="height: 350px; object-fit: cover;">
                 </div>
                 <div class="col-md-6">
                     <h2>Energy Suppliers</h2>
@@ -61,7 +61,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 order-1 order-md-2">
-                    <img src="home/img/about-img.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
+                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/582c788c-940b-49e2-908a-3468af11ba56-1024x682.jpg" class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
                 </div>
             </div>
             <!-- Second Row End -->
