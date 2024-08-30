@@ -8,13 +8,13 @@
 <body>
     <div class="container-xxl position-relative bg-white d-flex p-0">
         <!-- Spinner Start -->
-       
+
         <!-- Spinner End -->
 
 
         <!-- Sidebar Start -->
         <div class="sidebar pe-4 pb-3">
-           @include('admins.sidebar')
+            @include('admins.sidebar')
         </div>
         <!-- Sidebar End -->
 
@@ -22,7 +22,7 @@
         <!-- Content Start -->
         <div class="content">
             <!-- Navbar Start -->
-          @include('admins.navbar')
+            @include('admins.navbar')
             <!-- Navbar End -->
 
 
@@ -67,20 +67,20 @@
                     </div>
                 </div>
             </div>
-        
+
 
             <!-- Widgets Start -->
             <div class="container-fluid pt-4 px-4">
                 <div class="row g-4">
-                    
-                  
+
+
                 </div>
             </div>
             <!-- Widgets End -->
 
 
             <!-- Footer Start -->
-           
+
             <!-- Footer End -->
         </div>
         <!-- Content End -->
@@ -91,7 +91,7 @@
     </div>
 
     <!-- JavaScript Libraries -->
-        @include('admins.script')
+    @include('admins.script')
 
 </body>
 
