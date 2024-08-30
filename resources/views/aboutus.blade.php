@@ -42,7 +42,7 @@
                             <div class="pb-5">
                                 <h1 class="display-5 text-capitalize">Who <span class="text-primary">are we?</span></h1>
                                 <h4 class=" text-capitalize">Trusted  <span class="text-primary">& experienced</span></h4>
-                                <p class="mb-0">Global Utilities Marketing for Business is a trusted and Ofgem accredited energy comparison site and we have helped thousands of businesses.
+                                <p class="mb-0">UK Marketing LTD for Business is a trusted and Ofgem accredited energy comparison site and we have helped thousands of businesses.
                                 </p>
 
                                 <ul class="mt-4">

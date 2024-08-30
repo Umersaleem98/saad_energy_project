@@ -1,9 +1,11 @@
 <meta charset="utf-8">
-<title>Cental - Car Rent Website Template</title>
+<title>UK Marketing LTD</title>
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="" name="keywords">
 <meta content="" name="description">
 
+<!-- Favicon -->
+<link rel="icon" href="{{ asset('home/img/logo.png') }}" type="image/png">
 <!-- Google Web Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

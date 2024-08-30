@@ -40,7 +40,7 @@
                     With many broadband providers available across the UK, there are usually many options when searching for a new deal.
                     </p>
                     <p>
-                    Global Utilities Marketing hosts a range of brands that we trust to deliver a fantastic service for different needs. To find the right service for you and your business, you can compare offers from the UK’s top broadband suppliers.
+                    UK Marketing LTD hosts a range of brands that we trust to deliver a fantastic service for different needs. To find the right service for you and your business, you can compare offers from the UK’s top broadband suppliers.
                     </p>
                 </div>
             </div>

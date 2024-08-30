@@ -1,9 +1,8 @@
 <div class="container-fluid nav-bar sticky-top px-0 px-lg-4 py-2 py-lg-0">
             <div class="container">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-danger">
                     <a href="{{ url('/') }}" class="navbar-brand p-0">
-                        <h1 class="display-6 text-primary"><i class="fas fa-car-alt me-3"></i></i>Cental</h1>
-                        <!-- <img src="home/img/logo.png" alt="Logo"> -->
+                        <img src="home/img/logo.png" alt="Logo" style="width:100%; height:80px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                         <span class="fa fa-bars"></span>

@@ -59,7 +59,7 @@
         <div class="card-body">
           <div class="mt-2">
             <h4><a class="card-title-link" href="">Global Utilities Marketing</a></h4>
-            <p class="text-dark mb-2"> Global Utilities Marketing is the smart choice for businesses looking to reduce utility costs and become more sustainable through efficient utility management. </p>
+            <p class="text-dark mb-2">UK Marketing LTD is the smart choice for businesses looking to reduce utility costs and become more sustainable through efficient utility management. </p>
           </div>
         </div>
       </div>

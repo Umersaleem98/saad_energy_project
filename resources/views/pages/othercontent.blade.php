@@ -1,7 +1,7 @@
 <div class="container mt-5 mb-5">
     <div class="row">
         <div class="col-md-6 p-3">
-            <h4 style="font-size: 1.5rem; color: #333; text-align: start;">Why go with Global Utilities Marketing for your Business?</h4>
+            <h4 style="font-size: 1.5rem; color: #333; text-align: start;">Why go with UK Marketing LTD for your Business?</h4>
             <p style="font-size: 1rem; color: #333; text-align: start; line-height: 1.6;">
                 Our aim is to take the hassle of comparing business utilities, to leave you with more time to get on with the day-to-day running of things, not to mention more money to spend on the things your business really needs.
             </p>

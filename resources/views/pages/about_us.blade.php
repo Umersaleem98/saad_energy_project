@@ -6,7 +6,7 @@
         <div class="col-md-6 d-flex flex-column justify-content-center">
             <h3 class="text-start text-dark mt-3">About Us</h3>
             <p class="text-start text-dark">
-                We specialise in helping domestic and business customers with all utilities solutions. With a wealth of experience in the utilities industry, our team of specialists have unrivalled knowledge to deliver top notch consulting about your utilities, helping to keep it on time and within budget.
+            we specialize in assisting both domestic and business customers with comprehensive utility solutions. With extensive experience in the utilities industry, our team of specialists possesses unparalleled knowledge, enabling us to deliver top-notch consulting services for your utilities needs, ensuring everything is handled efficiently, on time, and within budget.
             </p>
         </div>
     </div>
