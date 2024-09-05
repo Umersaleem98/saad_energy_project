@@ -10,6 +10,7 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', [HomeController::class, 'about_us']);
 Route::get('/contact-us', [HomeController::class, 'contact_us']);
 Route::post('/contact-submit', [HomeController::class, 'submit']);
+Route::get('/our-submit', [HomeController::class, 'ourservices']);
 
 Route::get('/suppliers', [HomeController::class, 'oursuppliers']);
 Route::get('/partners', [HomeController::class, 'ourpartners']);

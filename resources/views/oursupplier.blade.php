@@ -18,11 +18,16 @@
     @include('pages.navbar')
 
     <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Our Strong Relationship with Our
-                Suppliers</h4>
-
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Our Services</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
         </div>
     </div>
     <!-- Header End -->

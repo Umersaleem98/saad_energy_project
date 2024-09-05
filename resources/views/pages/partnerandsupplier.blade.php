@@ -22,7 +22,7 @@
             <div class="card shadow">
                 <div class="card-body">
                     <div class="mt-2">
-                        <h4><a class="card-title-link" href="">Partners</a></h4>
+                        <h4><a class="card-title-link" href="">Our Partners</a></h4>
                         <p class="text-dark mb-2">
                             We partner with a range of different businesses. Our trusted network brings together energy
                             suppliers, brokers and tech partners to provide customers with a seamless journey.

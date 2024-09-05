@@ -45,6 +45,11 @@ class HomeController extends Controller
     {
         return view('oursupplier');
     }
+
+    public function ourservices()
+    {
+        return view('outservices');
+    }
     public function ourpartners()
     {
         return view('ourpartner');

@@ -31,36 +31,16 @@
     @include('pages.navbar')
     <!-- Topbar End -->
 
-    <!-- Navbar & Hero Start -->
-
-    <!-- Navbar & Hero End -->
-
-    <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">Partners</h4>
-            <p class="text-light">
-                We are proud to partner with a number of associations and commercial organisations across the country to
-                help more organisations across the UK save money on their business essential services.
-            </p>
-        </div>
-    </div>
-    <!-- Header End -->
-
-    <!-- Contact Start -->
-    <div class="container-fluid contact py-5">
+    <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
-            <div class="row g-5">
-                <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                    <h1 class=" text-capitalize text-primary mb-3">Energy & Utility Brokers</h1>
-                    <p class="mb-0">With operating a successful partnership programme, we have refined an
-                        industry-leading suite of energy services fully supported by our dedicated partner team. Market
-                        leading commission opportunity, Quality of Service, Marketing, Leading technology solutions,
-                        Dedicated partner support, Capable of delivering to all market sectors, and A more flexible way
-                        of working</p>
-                </div>
-
-            </div>
+            <h1 class="display-3 text-white mb-3 animated slideInDown">Our Partner</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">Services</li>
+                </ol>
+            </nav>
         </div>
     </div>
     <!-- Contact End -->

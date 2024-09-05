@@ -1,28 +1,25 @@
-<div class="container-fluid topbar bg-secondary d-none d-xl-block w-100">
-    <div class="container">
-        <div class="row gx-0 align-items-center" style="height: 45px;">
-            <div class="col-lg-4 text-center text-lg-start mb-lg-0">
-                <div class="d-flex flex-wrap">
-                    <a href="#" class="text-light me-4">Your Sustainability, Our Strategic Approach!</a>
-                    <!-- <a href="tel:+01234567890" class="text-muted me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a> -->
-                    <!-- <a href="mailto:example@gmail.com" class="text-muted me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a> -->
-                </div>
+<div class="container-fluid bg-dark p-0">
+    <div class="row gx-0 d-none d-lg-flex">
+        <div class="col-lg-7 px-5 text-start text-light">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <small class="fa fa-map-marker-alt text-danger me-2"></small>
+                <small>123 Street, New York, USA</small>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-flex align-items-center justify-content-end">
-                    <a href="#" class="text-light me-4">Get Free Estimate Call Now :
-                        020 3997 6395</a>
-                </div>
+            <div class="h-100 d-inline-flex align-items-center text-light">
+                <small class="far fa-clock text-danger me-2"></small>
+                <small>Mon - Fri : 09.00 AM - 09.00 PM</small>
             </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-flex align-items-center justify-content-end">
-                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
-                            class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-3"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="#" class="btn btn-light btn-sm-square rounded-circle me-0"><i
-                            class="fab fa-linkedin-in"></i></a>
-                </div>
+        </div>
+        <div class="col-lg-5 px-5 text-end text-light">
+            <div class="h-100 d-inline-flex align-items-center me-4">
+                <small class="fa fa-phone-alt text-danger me-2"></small>
+                <small>+012 345 6789</small>
+            </div>
+            <div class="h-100 d-inline-flex align-items-center mx-n2">
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary text-danger" href=""><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary text-danger" href=""><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary text-danger" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-square btn-link rounded-0" href=""><i class="fab fa-instagram text-danger"></i></a>
             </div>
         </div>
     </div>

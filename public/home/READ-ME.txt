@@ -1,6 +1,6 @@
-  =>  Template Name    : Cental - Car Rent Website Template
+  =>  Template Name    : Solartec - Renewable Energy Website Template
 
-  =>  Template Link    : https://htmlcodex.com/car-rent-website-template
+  =>  Template Link    : https://htmlcodex.com/renewable-energy-website-template
 
   =>  Template License : https://htmlcodex.com/license (or read the LICENSE.txt file)
 

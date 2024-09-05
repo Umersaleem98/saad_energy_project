@@ -7,13 +7,7 @@
 
 <body>
 
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
-        </div>
-    </div>
+
     <!-- Spinner End -->
 
     @include('pages.topbar')
@@ -24,57 +18,101 @@
     <!-- Navbar & Hero End -->
 
     <!-- Header Start -->
-    <div class="container-fluid bg-breadcrumb">
-        <div class="container text-center py-5" style="max-width: 900px;">
-            <h4 class="text-white display-4 mb-4 wow fadeInDown" data-wow-delay="0.1s">About Us</h4>
-            <p class="text-start text-light">
-                Through a blend of technology and industry experts, brokers have access to competitive pricing and
-                exclusive products across the utility markets. All available via our energyengine® system, it enables
-                our brokers to build successful businesses.
-            </p>
+   
+
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
     </div>
-    <!-- Header End -->
+    <!-- Spinner End -->
+
+
+
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
+        <div class="container py-5">
+            <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
+            <nav aria-label="breadcrumb animated slideInDown">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item text-white active" aria-current="page">About</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-danger rounded-circle me-3">
+                            <i class="fa fa-users text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">3453</h1>
+                    </div>
+                    <h5 class="mb-3">Happy Customers</h5>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-danger rounded-circle me-3">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">4234</h1>
+                    </div>
+                    <h5 class="mb-3">Project Done</h5>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-danger rounded-circle me-3">
+                            <i class="fa fa-award text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">3123</h1>
+                    </div>
+                    <h5 class="mb-3">Awards Win</h5>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="btn-lg-square bg-danger rounded-circle me-3">
+                            <i class="fa fa-users-cog text-white"></i>
+                        </div>
+                        <h1 class="mb-0" data-toggle="counter-up">1831</h1>
+                    </div>
+                    <h5 class="mb-3">Expert Workers</h5>
+                    <span>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature Start -->
+    
 
     <!-- About Start -->
-    <div class="container-fluid overflow-hidden about py-5">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-xl-6 wow fadeInLeft" data-wow-delay="0.2s">
-                    <div class="about-item">
-                        <div class="pb-5">
-                            <h1 class="display-5 text-capitalize">Who <span class="text-primary">are we?</span></h1>
-                            <h4 class=" text-capitalize">Trusted <span class="text-primary">& experienced</span></h4>
-                            <p class="mb-0">UK Marketing LTD for Business is a trusted and Ofgem accredited energy
-                                comparison site and we have helped thousands of businesses.
-                            </p>
-
-                            <ul class="mt-4">
-                                <li class="mb-4">
-                                    We'll show you how you could save money on your business energy deal, with access to
-                                    exclusive tariffs even with your current supplier.</li>
-
-                                <li class="mb-4">
-                                    Our UK-based experts will help you navigate the energy market and find the best
-                                    deals with a free, no-obligation quote
-                                </li>
-
-                                <li class="mb-4">
-                                    When the time is right for you to switch and save again, we can proactively take
-                                    care of it all for you, leaving you to take care of business.
-                                </li>
-                            </ul>
-                        </div>
-
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <div class="container about px-lg-0">
+            <div class="row g-0 mx-lg-0">
+                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/about.jpg" style="object-fit: cover;" alt="">
                     </div>
                 </div>
-                <div class="col-xl-6 wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="about-img">
-                        <div class="img-1">
-                            <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1352603244-612x612-1.jpg"
-                                class="img-fluid rounded h-100 w-100" alt="">
-                        </div>
-
+                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="p-lg-5 pe-lg-0">
+                        <h6 class="text-danger">About Us</h6>
+                        <h1 class="mb-4">25+ Years Experience In Solar & Renewable Energy Industry</h1>
+                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <p><i class="fa fa-check-circle text-danger me-3"></i>Diam dolor diam ipsum</p>
+                        <p><i class="fa fa-check-circle text-danger me-3"></i>Aliqu diam amet diam et eos</p>
+                        <p><i class="fa fa-check-circle text-danger me-3"></i>Tempor erat elitr rebum at clita</p>
+                        <a href="" class="btn btn-danger rounded-pill py-3 px-5 mt-3">Explore More</a>
                     </div>
                 </div>
             </div>
@@ -82,56 +120,68 @@
     </div>
     <!-- About End -->
 
-    <div class="container-fluid steps py-5">
-        <div class="container py-5">
-            <div class="text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;">
-                <h1 class="display-5 text-capitalize text-white mb-3">Our Company <span
-                        class="text-primary">Values</span></h1>
+
+    <!-- Team Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="text-danger">Team Member</h6>
+                <h1 class="mb-4">Experienced Team Members</h1>
             </div>
             <div class="row g-4">
-                <div class="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="steps-item p-4 mb-4 w-100 d-flex flex-column" style="background-color: #E6011F;">
-                        <h4 class="text-white">Honesty</h4>
-                        <p class="mb-0 text-white">We firmly believe in honesty and fair work values.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="home/img/team-1.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-6 d-flex wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="steps-item p-4 mb-4 w-100 d-flex flex-column" style="background-color: #E6011F;">
-                        <h4 class="text-white">Goal</h4>
-                        <p class="mb-0 text-white">Our goal is to become your utility department, so you can be assured
-                            that your business utility needs are managed by experts.</p>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="home/img/team-2.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item rounded overflow-hidden">
+                        <div class="d-flex">
+                            <img class="img-fluid w-75" src="home/img/team-3.jpg" alt="">
+                            <div class="team-social w-25">
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-lg-square btn-outline-danger rounded-circle mt-3" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="p-4">
+                            <h5>Full Name</h5>
+                            <span>Designation</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Team End -->
 
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-6">
-                <img src="home/img/about-img.jpg" class="img-fluid rounded w-100"
-                    style="height: 300px; object-fit: cover;" alt="">
-            </div>
-            <div class="col-md-6">
-                <h2 class="h4 h-md-2 mt-4 p-2 mb-2 text-dark">We are proud of our utilities experts</h2>
-                <p class="text-dark mt-3 p-2">Utilities are part of every business regardless of size and represent a
-                    large part of a business’s expenditure – directly impacting profit and growth. At Global Utilities
-                    Marketing, we pride ourselves on our reputation of delivering outstanding utility management
-                    services that are channeled towards our clients’ business goals and expectations. Our clients trust
-                    us to manage their utility costs, support them towards becoming carbon neutral, and ultimately
-                    reduce energy costs.</p>
-            </div>
-        </div>
-    </div>
-
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
-            class="fa fa-arrow-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
     @include('pages.footer')
     @include('pages.script')
 </body>
