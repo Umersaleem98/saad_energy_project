@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Team;
+use App\Models\Service;
 use App\Models\ContactForm;
 use Illuminate\Http\Request;
 
@@ -9,12 +11,15 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        $teams = Team::all();
+        $services = Service::all();
+        return view('welcome', compact('services', 'teams'));
     }
    
     public function about_us()
     {
-        return view('aboutus');
+        $teams = Team::all();
+        return view('aboutus', compact('teams'));
     }
     public function contact_us()
     {
@@ -48,7 +53,8 @@ class HomeController extends Controller
 
     public function ourservices()
     {
-        return view('outservices');
+        $services = Service::all();
+        return view('outservices', compact('services'));
     }
     public function ourpartners()
     {

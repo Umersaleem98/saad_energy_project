@@ -4,13 +4,15 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\DashboardTeamController;
+use App\Http\Controllers\ServiceDashboardController;
 
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/about-us', [HomeController::class, 'about_us']);
 Route::get('/contact-us', [HomeController::class, 'contact_us']);
 Route::post('/contact-submit', [HomeController::class, 'submit']);
-Route::get('/our-submit', [HomeController::class, 'ourservices']);
+Route::get('/our-services', [HomeController::class, 'ourservices']);
 
 Route::get('/suppliers', [HomeController::class, 'oursuppliers']);
 Route::get('/partners', [HomeController::class, 'ourpartners']);
@@ -36,3 +38,14 @@ Route::get('dashboard', function () {
 
 
 Route::get('/message', [DashboardController::class, 'message_list']);
+
+Route::get('/services_create', [ServiceDashboardController::class, 'create']);
+Route::post('/services_store', [ServiceDashboardController::class, 'store']);
+Route::get('/services_view', [ServiceDashboardController::class, 'services_list']);
+Route::get('/services_destroy/{id}', [ServiceDashboardController::class, 'delete']);
+
+
+Route::get('/team_create', [DashboardTeamController::class, 'create']);
+Route::post('/team_store', [DashboardTeamController::class, 'store']);
+Route::get('/team_list', [DashboardTeamController::class, 'list']);
+Route::get('/teams_destroy/{id}', [DashboardTeamController::class, 'delete']);

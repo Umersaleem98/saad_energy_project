@@ -10,7 +10,7 @@
         <div class="navbar-nav p-4 p-lg-0">
             <a href="{{ url('/') }}" class="nav-item nav-link active">Home</a>
             <a href="{{ url('about-us') }}" class="nav-item nav-link">About</a>
-            <a href="{{ url('our-submit') }}" class="nav-item nav-link">Service</a>
+            <a href="{{ url('our-services') }}" class="nav-item nav-link">Service</a>
             <a href="{{ url('partners') }}" class="nav-item nav-link">Partners </a>
             <a href="{{ url('suppliers') }}" class="nav-item nav-link">Supplier </a>
             <a href="{{ url('contact-us') }}" class="nav-item nav-link">Contact</a>
