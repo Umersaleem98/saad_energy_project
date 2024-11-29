@@ -107,18 +107,62 @@
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <h6 class="text-danger">About Us</h6>
-                        <h1 class="mb-4">25+ Years Experience In Solar & Renewable Energy Industry</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Diam dolor diam ipsum</p>
+                        <h1 class="mb-4">Here to help your business:</h1>
+                        <p>UK Marketing Services, a trusted partner delivers transformative solutions in Energy and Telecoms. Our expertise ensures tailored, cost-effective strategies, saving you money through strategic supplier negotiations and competitive rates. </p>
+                        <p>Reliability is our cornerstone, offering trustworthy service, minimal downtime, and unwavering connectivity. Choosing UK Marketing Services means exceptional service, cost efficiency, time savings, and customized solutions to propel your business forward.
+                        </p>
+                        {{-- <p><i class="fa fa-check-circle text-danger me-3"></i>Diam dolor diam ipsum</p>
                         <p><i class="fa fa-check-circle text-danger me-3"></i>Aliqu diam amet diam et eos</p>
                         <p><i class="fa fa-check-circle text-danger me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <a href="" class="btn btn-danger rounded-pill py-3 px-5 mt-3">Explore More</a>
+                        <a href="" class="btn btn-danger rounded-pill py-3 px-5 mt-3">Explore More</a> --}}
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
+<!-- New Section Start -->
+<div class="container-fluid py-5 my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side (Text) -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <h2 class="mb-4">What we can do for you:</h2>
+                <p>Saving Your Business Precious time</p>
+                <p>Our tailored solutions, seamless services, and reliable support minimise hassle for you and maximise time to focus on what you do best!</p>
+            </div>
+
+            <!-- Right Side (Image) -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                <img src="home/img/images.jpg" class="img-fluid" alt="Our Vision" style="width: 100%">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- New Section End -->
+
+<!-- New Section Start -->
+<div class="container-fluid py-5 my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Side (Image) -->
+            <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                <img src="home/img/all_energy_solar_cover.jpg" class="img-fluid" alt="Our Vision" style="width: 100%">
+            </div>
+
+            <!-- Right Side (Text) -->
+            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+                <h2 class="mb-4">Dedicated Account Managers</h2>
+                <p>Here at UK Marketing Services, we believe a human connection is essential for successful relationships. So, our customers are given dedicated managers with direct contact details!
+                    Get In Contact
+                    Helping You To Save Valuable Money
+                    </p>
+                <p>Money saved means more money for you to reinvest in your business</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- New Section End -->
 
 
     <!-- Team Start -->

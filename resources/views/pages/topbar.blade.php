@@ -3,7 +3,7 @@
         <div class="col-lg-7 px-5 text-start text-light">
             <div class="h-100 d-inline-flex align-items-center me-4">
                 <small class="fa fa-map-marker-alt text-danger me-2"></small>
-                <small>123 Street, New York, USA</small>
+                <small>19 St Peter’s close London IG2 7QL</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center text-light">
                 <small class="far fa-clock text-danger me-2"></small>
@@ -13,7 +13,7 @@
         <div class="col-lg-5 px-5 text-end text-light">
             <div class="h-100 d-inline-flex align-items-center me-4">
                 <small class="fa fa-phone-alt text-danger me-2"></small>
-                <small>+012 345 6789</small>
+                <small>07973755842</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center mx-n2">
                 <a class="btn btn-square btn-link rounded-0 border-0 border-end border-secondary text-danger" href=""><i class="fab fa-facebook-f"></i></a>

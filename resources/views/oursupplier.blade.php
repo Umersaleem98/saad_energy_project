@@ -44,12 +44,7 @@
                 <div class="col-md-6">
                     <h2>Energy Suppliers</h2>
                     <p>
-                        How we can help you switch business energy suppliers. We work with the top business energy
-                        suppliers to compare business energy quotes and get you the best energy deal for your business.
-                        As you can see, we don’t only negotiate contracts with the biggest energy suppliers; we also
-                        compare quotes from smaller energy suppliers that may have products, packages and prices more
-                        suitable to your needs. By conducting a wide comparison of the different energy contracts
-                        offered by a range of suppliers, we can find the option that is right for your business.
+                        UK Marketing Services is not exclusively aligned or tied to a single Energy supplier. This means we find the best deal in the market to suit your specific business. We are able to provide you a price comparison from a number of suppliers, make a recommendation based on our decades of industry expertise and make sure the contract you finally agree to meets your specific needs. We continually monitor the industry to make sure what we recommend is fit for purpose and the quality of the service you are buying is suitable. We closely check the contractual agreements with our customers so everyone is clear on what you are getting.
                     </p>
                     <p>
                         No matter the size of your business, let us do the hard work by comparing suppliers and finding

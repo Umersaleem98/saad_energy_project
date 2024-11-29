@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-   @include('pages.head')
+    @include('pages.head')
 </head>
 
 <body>
     <!-- Spinner Start -->
-    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-danger" style="width: 3rem; height: 3rem;" role="status">
             <span class="sr-only">Loading...</span>
         </div>
@@ -16,7 +17,7 @@
 
 
     <!-- Topbar Start -->
-  @include('pages.topbar')
+    @include('pages.topbar')
     <!-- Topbar End -->
 
 
@@ -26,7 +27,7 @@
 
 
     <!-- Carousel Start -->
-   @include('pages.slider')
+    @include('pages.slider')
     <!-- Carousel End -->
 
 
@@ -86,20 +87,73 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/about.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/about.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <h6 class="text-danger">About Us</h6>
-                        <h1 class="mb-4">25+ Years Experience In Solar & Renewable Energy Industry</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Diam dolor diam ipsum</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <a href="" class="btn btn-danger rounded-pill py-3 px-5 mt-3">Explore More</a>
+                        <h1 class="mb-4">Becoming a member of the UK Marketing Services community will benefit your Business:</h1>
+                        
+                        <!-- First two paragraphs are always visible -->
+                        <p class="text-dark">UK Marketing Services, a trusted partner delivers transformative solutions
+                            in Energy and Telecoms. Our expertise ensures tailored, cost-effective strategies, saving
+                            you money through strategic supplier negotiations and competitive rates.</p>
+                
+                        <p class="text-dark">Reliability is our cornerstone, offering trustworthy service, minimal downtime, and unwavering connectivity.
+                            Choosing UK Marketing Services means exceptional service, cost efficiency, time savings, and customized solutions
+                            to propel your business forward.</p>
+                        
+                        <!-- Extra content that will be shown on clicking "Read More" -->
+                        <p class="text-dark" id="extra-content" style="display:none;">
+                           <b> What we can do for you:</b>
+                            Saving Your Business Precious time
+                            Our tailored solutions, seamless services, and reliable support minimise hassle for you and
+                            maximise time to focus on what you do best!
+                        </p>
+                        
+                        <p class="text-dark" id="extra-content" style="display:none;">
+                            <b>Dedicated Account Managers</b>
+                            Here at UK Marketing Services, we believe a human connection is essential for successful
+                            relationships. So, our customers are given dedicated managers with direct contact details!
+                            Get In Contact
+                            Helping You To Save Valuable Money
+                            Money saved means more money for you to reinvest in your business.
+                        </p>
+                        
+                        <!-- Single Toggle Button -->
+                        <a href="javascript:void(0);" class="btn btn btn-danger rounded-pill" id="toggle-btn">Read More</a>
                     </div>
                 </div>
+                
+                <script>
+                    // Get the toggle button and extra content paragraphs
+                    const toggleBtn = document.getElementById('toggle-btn');
+                    const extraContent = document.querySelectorAll('#extra-content');
+                
+                    // Event listener for toggle button
+                    toggleBtn.addEventListener('click', function() {
+                        // Check if extra content is visible
+                        const isContentVisible = extraContent[0].style.display === 'block';
+                
+                        if (isContentVisible) {
+                            // Hide extra content and change button text to "Read More"
+                            extraContent.forEach(content => {
+                                content.style.display = 'none';
+                            });
+                            toggleBtn.textContent = 'Read More'; // Change button text
+                        } else {
+                            // Show extra content and change button text to "Read Less"
+                            extraContent.forEach(content => {
+                                content.style.display = 'block';
+                            });
+                            toggleBtn.textContent = 'Read Less'; // Change button text
+                        }
+                    });
+                </script>
+                
+                
             </div>
         </div>
     </div>
@@ -114,23 +168,24 @@
                 <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
             </div>
             <div class="row g-4">
-               @foreach ($services as $item)
-               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="home/img/img-600x400-1.jpg" alt="">
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-solar-panel fa-3x"></i>
+                @foreach ($services as $item)
+                    <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded overflow-hidden">
+                            <img class="img-fluid" src="home/img/img-600x400-1.jpg" alt="">
+                            <div class="position-relative p-4 pt-0">
+                                <div class="service-icon">
+                                    <i class="fa fa-solar-panel fa-3x"></i>
+                                </div>
+                                <h4 class="mb-3">{{ $item->title }}</h4>
+                                <p>{{ $item->description }}</p>
+                                <a class="small fw-medium" href="">Read More<i
+                                        class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
                         </div>
-                        <h4 class="mb-3">{{ $item->title }}</h4>
-                        <p>{{ $item->description }}</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
                     </div>
-                </div>
-            </div>   
-               @endforeach
+                @endforeach
 
-               
+
             </div>
         </div>
     </div>
@@ -145,7 +200,9 @@
                     <div class="p-lg-5 ps-lg-0">
                         <h6 class="text-danger">Why Choose Us!</h6>
                         <h1 class="mb-4">Complete Commercial & Residential Solar Systems</h1>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet</p>
                         <div class="row g-4">
                             <div class="col-6">
                                 <div class="d-flex align-items-center">
@@ -196,7 +253,8 @@
                 </div>
                 <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/feature.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/feature.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
             </div>
@@ -227,8 +285,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-6.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -241,8 +301,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-5.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -255,8 +317,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-4.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -269,8 +333,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-3.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -283,8 +349,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-2.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -297,8 +365,10 @@
                     <div class="portfolio-img rounded overflow-hidden">
                         <img class="img-fluid" src="home/img/img-600x400-1.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i class="fa fa-link"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+                                href="img/img-600x400-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href=""><i
+                                    class="fa fa-link"></i></a>
                         </div>
                     </div>
                     <div class="pt-3">
@@ -319,24 +389,30 @@
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/quote.jpg" style="object-fit: cover;" alt="">
+                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/quote.jpg"
+                            style="object-fit: cover;" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
                         <h6 class="text-danger">Free Quote</h6>
                         <h1 class="mb-4">Get A Free Quote</h1>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
+                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam
+                            amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat
+                            amet</p>
                         <form>
                             <div class="row g-3">
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0" placeholder="Your Mobile" style="height: 55px;">
+                                    <input type="text" class="form-control border-0" placeholder="Your Mobile"
+                                        style="height: 55px;">
                                 </div>
                                 <div class="col-12 col-sm-6">
                                     <select class="form-select border-0" style="height: 55px;">
@@ -350,7 +426,8 @@
                                     <textarea class="form-control border-0" placeholder="Special Note"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-danger rounded-pill py-3 px-5" type="submit">Submit</button>
+                                    <button class="btn btn-danger rounded-pill py-3 px-5"
+                                        type="submit">Submit</button>
                                 </div>
                             </div>
                         </form>
@@ -383,7 +460,9 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                            clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -396,7 +475,9 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                            clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -409,7 +490,9 @@
                         </div>
                     </div>
                     <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
+                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna
+                            ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea
+                            clita.</p>
                         <h5 class="mb-1">Client Name</h5>
                         <span class="fst-italic">Profession</span>
                     </div>
@@ -424,7 +507,8 @@
     @include('pages.footer')
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i
+            class="bi bi-arrow-up"></i></a>
 
 
     @include('pages.script')
