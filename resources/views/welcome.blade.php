@@ -192,7 +192,7 @@
                         <!-- Service Image -->
                         <img class="img-fluid" 
                              src="{{ asset('images/servicesimages/' . $item->image) }}" 
-                             alt="{{ $item->title }}">
+                             alt="{{ $item->title }}" style="height: 200px; width: 100%;">
                         
                         <div class="position-relative p-4 pt-0">
                             <!-- Service Icon -->

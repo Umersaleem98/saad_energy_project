@@ -86,7 +86,7 @@
             </div>
             <!-- Image Section -->
             <div class="col-md-6 order-1 order-md-2">
-                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
+                <img src="home/img/all_energy_solar_cover1.jpg" alt="Descriptive Alt Text" class="img-fluid">
             </div>
         </div>
     </div>
@@ -95,7 +95,7 @@
         <div class="row align-items-center">
             <!-- Image Section -->
             <div class="col-md-6">
-                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
+                <img src="home/img/all_energy_solar_cover2.jpg" alt="Descriptive Alt Text" class="img-fluid">
             </div>
             <!-- Text Section -->
             <div class="col-md-6 order-1 order-md-2">
@@ -175,7 +175,7 @@
             </div>
 
             <div class="col-md-6 order-md-2">
-                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
+                <img src="home/img/all_energy_solar_cover3.jpg" alt="Descriptive Alt Text" class="img-fluid">
             </div>
         </div>
     </div>
