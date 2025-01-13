@@ -6,9 +6,11 @@
                 <div class="container">
                     <div class="row justify-content-start">
                         <div class="col-10 col-lg-8">
-                            <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                            <a href="" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            <h1 class="display-2 text-white animated slideInDown">Your Trusted Partner in Solar and Renewable Energy</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                                Empowering a sustainable future with innovative solutions in renewable energy. From residential systems to commercial projects, we deliver quality, efficiency, and value you can rely on.
+                            </p>
+                            <a href="{{ url('about-us') }}" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -20,9 +22,11 @@
                 <div class="container">
                     <div class="row justify-content-start">
                         <div class="col-10 col-lg-8">
-                            <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                            <a href="" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            <h1 class="display-2 text-white animated slideInDown">Efficient Logistics for a Greener Tomorrow</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                                Delivering seamless logistics solutions to support sustainable energy distribution worldwide. Let us optimize your journey to a cleaner and greener future.
+                            </p>
+                            <a href="{{ url('about-us') }}" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -34,9 +38,11 @@
                 <div class="container">
                     <div class="row justify-content-start">
                         <div class="col-10 col-lg-8">
-                            <h1 class="display-2 text-white animated slideInDown">Pioneers Of Solar And Renewable Energy</h1>
-                            <p class="fs-5 fw-medium text-white mb-4 pb-3">Vero elitr justo clita lorem. Ipsum dolor at sed stet sit diam no. Kasd rebum ipsum et diam justo clita et kasd rebum sea elitr.</p>
-                            <a href="" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
+                            <h1 class="display-2 text-white animated slideInDown">Innovative Solar Solutions for Every Need</h1>
+                            <p class="fs-5 fw-medium text-white mb-4 pb-3">
+                                Join the movement towards energy independence with cutting-edge solar technology. Transform your residential or commercial space with systems designed for optimal performance.
+                            </p>
+                            <a href="{{ url('about-us') }}" class="btn btn-danger rounded-pill py-3 px-5 animated slideInLeft">Read More</a>
                         </div>
                     </div>
                 </div>

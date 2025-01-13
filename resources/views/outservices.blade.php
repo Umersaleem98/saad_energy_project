@@ -32,9 +32,8 @@
     @include('pages.navbar')
     <!-- Topbar End -->
 
- 
-       <!-- Page Header Start -->
-       <div class="container-fluid page-header py-5 mb-5">
+    <!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">Our Services</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -48,170 +47,139 @@
     </div>
     <!-- Page Header End -->
 
+    <br>
+    <div class="container mb-3">
+        <div class="row align-items-center">
+            <!-- Text Section -->
+            <div class="col-md-6 order-2 order-md-1">
+                <h2 class="mb-3 text-center">Electricity Procurement:</h2>
+                <p class="text-dark">
+                    Electricity is a fundamental necessity, yet navigating the ever-changing energy market can be daunting. Our team of experts works on your behalf to:
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-dark">Source competitive quotes:</strong>
+                        <p class="text-dark">
+                            We leverage our extensive network of suppliers to secure the most favorable rates for your electricity consumption, whether you're a homeowner or a large-scale enterprise.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Analyze your energy usage:</strong>
+                        <p class="text-dark">
+                            By understanding your consumption patterns, we can identify opportunities for savings and recommend the most suitable tariff for your needs.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Negotiate contracts:</strong>
+                        <p class="text-dark">
+                            We handle the complex process of contract negotiations, ensuring you get the best possible terms and conditions.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Explore green energy options:</strong>
+                        <p class="text-dark">
+                            For those looking to reduce their carbon footprint, we offer access to renewable energy plans.
+                        </p>
+                    </li>
+                </ul>
 
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-danger">Our Services</h6>
-                <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
             </div>
-            <div class="row g-4">
-               @foreach ($services as $item)
- 
-               <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded overflow-hidden">
-                    {{-- <img class="img-fluid" src="home/img/img-600x400-1.jpg" alt=""> --}}
-                    <img src="{{ asset('/images/teams/' . $item->image) }}" alt="teams" width="100" height="50">
-                    
-
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-solar-panel fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">{{ $item->title }}</h4>
-                        <p>{{ $item->description }}</p>
-                        <a class="small fw-medium" href="">Read More<i class="fa fa-arrow-right ms-2"></i></a>
-                    </div>
-                </div>
-            </div>
-               @endforeach
- 
-               
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-    <!-- Feature Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-danger">Why Choose Us!</h6>
-                        <h1 class="mb-4">Complete Commercial & Residential Solar Systems</h1>
-                        <p class="mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-danger rounded-circle">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Quality</p>
-                                        <h5 class="mb-0">Services</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-danger rounded-circle">
-                                        <i class="fa fa-user-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Expert</p>
-                                        <h5 class="mb-0">Workers</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-danger rounded-circle">
-                                        <i class="fa fa-drafting-compass text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Free</p>
-                                        <h5 class="mb-0">Consultation</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-danger rounded-circle">
-                                        <i class="fa fa-headphones text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Customer</p>
-                                        <h5 class="mb-0">Support</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/feature.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
+            <!-- Image Section -->
+            <div class="col-md-6 order-1 order-md-2">
+                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
             </div>
         </div>
     </div>
-    <!-- Feature End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-danger">Testimonial</h6>
-                <h1 class="mb-4">What Our Clients Say!</h1>
+    <div class="container mb-3">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
             </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
-                        <div class="btn-square bg-danger rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
-                        <div class="btn-square bg-danger rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
-                        <div class="btn-square bg-danger rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
+            <!-- Text Section -->
+            <div class="col-md-6 order-1 order-md-2">
+                <h2 class="mb-3 text-center">Gas Supply Management:</h2>
+                <p class="text-dark">
+                    Similar to electricity, gas tariffs can vary significantly between providers. We offer a similar service for your gas supply, helping you:
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-dark">Compare gas rates: </strong>
+                        <p class="text-dark">
+                            We diligently compare tariffs from multiple suppliers to find the most economical options.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Negotiate optimal contracts:</strong>
+                        <p class="text-dark">
+                            We work to secure gas supply contracts that align with your usage and budget.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Manage contract renewals: </strong>
+                        <p class="text-dark">
+                            We proactively manage your contract renewals, ensuring you don’t roll onto unfavorable rates.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Stay ahead of market trends:</strong>
+                        <p class="text-dark">
+                            We monitor market fluctuations to help you make informed decisions regarding your gas supply.
+                        </p>
+                    </li>
+                </ul>
+
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
-     
 
+  
+
+    <div class="container mb-3">
+        <div class="row align-items-center">
+            <!-- Image Section -->
+            <div class="col-md-6">
+                <img src="home/img/all_energy_solar_cover.jpg" alt="Descriptive Alt Text" class="img-fluid">
+            </div>
+            <!-- Text Section -->
+            <div class="col-md-6 ">
+                <h2 class="mb-3 text-center">Telecom and Broadband Solutions:</h2>
+                <p class="text-dark">
+                    Staying connected is critical for both personal and professional lives. We simplify your telecom and broadband needs by:
+                </p>
+                <ul>
+                    <li>
+                        <strong class="text-dark">Comparing provider packages: </strong>
+                        <p class="text-dark">
+                            We navigate the complexities of telecom and broadband packages, presenting you with the most suitable options.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Securing the best deals:</strong>
+                        <p class="text-dark">
+                            We negotiate with providers to find competitive rates and plans tailored to your specific requirements.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Managing contract terms: </strong>
+                        <p class="text-dark">
+                            We review contracts to ensure transparency and that they are working in your favor.
+                        </p>
+                    </li>
+                    <li>
+                        <strong class="text-dark">Providing seamless service:</strong>
+                        <p class="text-dark">
+                            We aim to make the switching process smooth and hassle-free.
+                        </p>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
 
     @include('pages.footer')
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
-            class="fa fa-arrow-up"></i></a>
 
     @include('pages.script')
 </body>

@@ -46,56 +46,21 @@
     </div>
     <!-- Contact End -->
 
-    <div class="container mb-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="card h-100 p-3">
-                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1440504624-612x612-1.jpg"
-                        class="card-img-top img-fluid hover-effect" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3 p-2">Start-up brokers</h5>
-                        <p class="card-text">Offer your customers additional cost-saving services. We’re constantly
-                            scanning the markets to help business customers find the best energy contracts, and we can
-                            do it for your customer base too. Not only will this reduce their utility bills but it will
-                            also generate commission and customer loyalty for you. We already work with a variety of
-                            buying groups, franchise organisations, and individual companies who simply connect us to
-                            their customers or provide our services, with a little help from us.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card h-100 p-3">
-                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1456339578-612x612-1.jpg"
-                        class="card-img-top img-fluid hover-effect" alt="Card Image">
-                    <div class="card-body">
-                        <h5 class="card-title text-center mb-3 p-2">Established energy consultants</h5>
-                        <p class="card-text">Once you are a UK Marketing LTD partner, you can receive a regular income
-                            based on sales achieved. We make it easy for you to track the progress of your sales with
-                            regular system-generated reports sent directly to you. Connect us to your customers or
-                            members that will be interested in our services and we will effortlessly ensure that you
-                            generate additional income from your contacts and, at the same time, your customers will
-                            benefit from great energy and water prices.</p>
-                    </div>
-                </div>
-            </div>
+   <div class="container">
+    <h2 class="text-dark text-center mb-5">Out Partner</h2>    
+    <div class="row">
+        <div class="col-md-6">
+            <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2024/08/istockphoto-1440504624-612x612-1.jpg"
+            class="card-img-top img-fluid hover-effect" alt="Card Image">
+        </div>
+        <div class="col-md-6">
 
+            <p class="text-dark">
+                Navigating the complexities of utility procurement can be a daunting task for any business. That's where we come in. As a leading utility broker, we've established strong partnerships with a diverse network of both large and small utility suppliers. This unique position allows us to access a wide range of options, ensuring we find the most competitive rates and tailored solutions for your specific energy needs. Whether you're a small startup or a large corporation, our expertise and comprehensive supplier relationships mean you benefit from increased choice, cost savings, and streamlined procurement. We do the legwork, so you can focus on what you do best: growing your business.
+            </p>
         </div>
     </div>
-    <div class="container mb-5">
-        <div class="row justify-content-center">
-            <div class="col-md-8 mx-auto text-center">
-                <h2>Affiliate Partnerships</h2>
-                <p>
-                    The relationship will allow you to offer our exclusive energy, water & payment solution products to
-                    your clients. We understand the need for long lasting relationships therefore its imperative you
-                    partner with a company that will treat you and your client with transparency and market leading
-                    customer care. Our proposition will allow an additional residual revenue stream to your business and
-                    additional value-added service to offer to your customers. We have found that our partners have
-                    created enormous goodwill and loyalty by offering these services.
-                </p>
-            </div>
-        </div>
-    </div>
+   </div>
 
 
 

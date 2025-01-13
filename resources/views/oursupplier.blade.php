@@ -4,6 +4,11 @@
 <head>
     <title>Supplier</title>
     @include('pages.head')
+    <style>
+        .more-content {
+            display: none;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,47 +47,18 @@
                         class="img-fluid rounded w-100" alt="" style="height: 350px; object-fit: cover;">
                 </div>
                 <div class="col-md-6">
-                    <h2>Energy Suppliers</h2>
-                    <p>
+                    <h2 class="text-center">Our Suppliers</h2>
+                    <p class="text-dark">
                         UK Marketing Services is not exclusively aligned or tied to a single Energy supplier. This means we find the best deal in the market to suit your specific business. We are able to provide you a price comparison from a number of suppliers, make a recommendation based on our decades of industry expertise and make sure the contract you finally agree to meets your specific needs. We continually monitor the industry to make sure what we recommend is fit for purpose and the quality of the service you are buying is suitable. We closely check the contractual agreements with our customers so everyone is clear on what you are getting.
                     </p>
-                    <p>
-                        No matter the size of your business, let us do the hard work by comparing suppliers and finding
-                        the best deal that works for you!
-                    </p>
+                    <div class="more-content">
+                        <p class="text-dark">
+                            All you need to do is fill out the contact form below and we will give you a call when convenient to yourself, we then look at your business setup, usage, area and will provide a quote based on the best deals available to you. We would like to relationship-build, rather than a one-off transfer, and so we can be your one-stop-shop for utilities, leaving you in confidence to focus your time on your day-to-day business dealings.
+                        </p>
+                    </div>
+                    <button id="toggleButton" class="btn btn-danger">Read More</button>
                 </div>
             </div>
-
-            <!-- Second Row Start -->
-            <div class="row g-5 mt-5">
-                <div class="col-md-6 order-2 order-md-1">
-                    <h2>Water Suppliers</h2>
-                    <p>
-                        April 2017 saw the deregulation of water in England, allowing organisations to join those in
-                        Scotland, giving them freedom to choose their retail water supplier.
-                    </p>
-                    <p>
-                        The system allows non-domestic customers to have the opportunity to choose their retail water
-                        supplier as opposed to the previous method of having to buy retail water services directly from
-                        the regional water company.
-                    </p>
-                    <p>
-                        This subsequently allowed organisations in England to control and potentially save money on
-                        their water bills. Being able to choose separate retailers for both their water retail services
-                        and another for their wastewater services allows a company to shop around.
-                    </p>
-                    <p>
-                        Retailer prices are constantly changing; renegotiating or switching retailers should be
-                        considered by your business to ensure you are never paying too much.
-                    </p>
-                </div>
-                <div class="col-md-6 order-1 order-md-2">
-                    <img src="https://globalutilitiesmarketing.co.uk/wp-content/uploads/2023/10/582c788c-940b-49e2-908a-3468af11ba56-1024x682.jpg"
-                        class="img-fluid rounded w-100" alt="" style="height: 400px; object-fit: cover;">
-                </div>
-            </div>
-            <!-- Second Row End -->
-
         </div>
     </div>
     <!-- Contact End -->
@@ -94,6 +70,21 @@
             class="fa fa-arrow-up"></i></a>
 
     @include('pages.script')
+
+    <script>
+        const toggleButton = document.getElementById('toggleButton');
+        const moreContent = document.querySelector('.more-content');
+
+        toggleButton.addEventListener('click', () => {
+            if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+                moreContent.style.display = 'block';
+                toggleButton.textContent = 'Read Less';
+            } else {
+                moreContent.style.display = 'none';
+                toggleButton.textContent = 'Read More';
+            }
+        });
+    </script>
 </body>
 
 </html>

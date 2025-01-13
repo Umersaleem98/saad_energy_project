@@ -111,10 +111,7 @@
                         <p>UK Marketing Services, a trusted partner delivers transformative solutions in Energy and Telecoms. Our expertise ensures tailored, cost-effective strategies, saving you money through strategic supplier negotiations and competitive rates. </p>
                         <p>Reliability is our cornerstone, offering trustworthy service, minimal downtime, and unwavering connectivity. Choosing UK Marketing Services means exceptional service, cost efficiency, time savings, and customized solutions to propel your business forward.
                         </p>
-                        {{-- <p><i class="fa fa-check-circle text-danger me-3"></i>Diam dolor diam ipsum</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Aliqu diam amet diam et eos</p>
-                        <p><i class="fa fa-check-circle text-danger me-3"></i>Tempor erat elitr rebum at clita</p>
-                        <a href="" class="btn btn-danger rounded-pill py-3 px-5 mt-3">Explore More</a> --}}
+                       
                     </div>
                 </div>
             </div>
@@ -122,7 +119,7 @@
     </div>
     <!-- About End -->
 <!-- New Section Start -->
-<div class="container-fluid py-5 my-5">
+<div class="container-fluid">
     <div class="container">
         <div class="row align-items-center">
             <!-- Left Side (Text) -->
@@ -151,7 +148,7 @@
             </div>
 
             <!-- Right Side (Text) -->
-            <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.5s">
+            <div class="col-lg-6 wow text-dark" data-wow-delay="0.5s">
                 <h2 class="mb-4">Dedicated Account Managers</h2>
                 <p>Here at UK Marketing Services, we believe a human connection is essential for successful relationships. So, our customers are given dedicated managers with direct contact details!
                     Get In Contact
