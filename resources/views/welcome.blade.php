@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('pages.head')
+    @include('layouts.head')
 </head>
 
 <body>
@@ -17,17 +17,17 @@
 
 
     <!-- Topbar Start -->
-    @include('pages.topbar')
+    @include('layouts.topbar')
     <!-- Topbar End -->
 
 
     <!-- Navbar Start -->
-    @include('pages.navbar')
+    @include('layouts.navbar')
     <!-- Navbar End -->
 
 
     <!-- Carousel Start -->
-    @include('pages.slider')
+    @include('layouts.slider')
     <!-- Carousel End -->
 
 
@@ -91,13 +91,12 @@
 
 
     <!-- About Start -->
-
-    <div class="container">
-        <div class="row">
-            <h1 class="mb-1 text-center" style="color: #003663">About Us</h1>
-        </div>
-    </div>
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+        <!-- Heading on Top -->
+        <div class="text-center py-4">
+            <h2 class="text-danger">About Us</h2>
+        </div>
+    
         <div class="container about px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
@@ -108,7 +107,7 @@
                 </div>
                 <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
                     <div class="p-lg-5 pe-lg-0">
-                        {{-- <h6 class="text-danger">About Us</h6> --}}
+                        <h6 class="text-danger">About Us</h6>
                         <h1 class="mb-4">Here to help your business:</h1>
                         
                         <!-- First two paragraphs are always visible -->
@@ -167,93 +166,52 @@
                         }
                     });
                 </script>
-                
-                
             </div>
         </div>
     </div>
+    
     <!-- About End -->
 
 
-  <!-- Service Start -->
+ <!-- Service Start -->
 <div class="container-xxl py-5">
+    <!-- Heading on Top -->
+    <div class="text-center py-4">
+        <h2 class="text-danger">Our Services</h2>
+    </div>
+    
     <div class="container">
         <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h6 class="text-danger">Our Services</h6>
-            <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
+            {{-- <h6 class="text-danger">Our Services</h6> --}}
+            {{-- <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1> --}}
         </div>
         <div class="row g-4">
             @foreach ($services as $item)
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="service-item rounded overflow-hidden">
-                        <img class="img-fluid" src="home/img/img-600x400-1.jpg" alt="">
+                        <!-- Service Image -->
+                        <img class="img-fluid" 
+                             src="{{ asset('images/servicesimages/' . $item->image) }}" 
+                             alt="{{ $item->title }}">
+                        
                         <div class="position-relative p-4 pt-0">
+                            <!-- Service Icon -->
                             <div class="service-icon">
-                                <i class="fa fa-solar-panel fa-3x"></i>
+                                <img src="{{ asset('images/icons/' . $item->icon) }}" 
+                                     alt="{{ $item->title }} Icon" 
+                                     class="img-fluid" style="width: 50px; height: 50px;">
                             </div>
+                            
                             <h4 class="mb-3">{{ $item->title }}</h4>
                             <p>{{ $item->description }}</p>
-                           
                         </div>
                     </div>
                 </div>
             @endforeach
-            <!-- Static Services -->
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="home/img/img-600x400-2.jpg" alt="">
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-line fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Analyze Your Energy Usage</h4>
-                        <p>We provide detailed insights into your energy consumption to identify areas for optimization and cost savings.</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="home/img/img-600x400-3.jpg" alt="">
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-gas-pump fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Gas Supply Management</h4>
-                        <p>Our experts ensure efficient management and procurement of gas supply for your business needs.</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="home/img/img-600x400-4.jpg" alt="">
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-water fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Water Services Optimization</h4>
-                        <p>Optimize water consumption with our tailored solutions for residential and commercial properties.</p>
-                       
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.7s">
-                <div class="service-item rounded overflow-hidden">
-                    <img class="img-fluid" src="home/img/img-600x400-5.jpg" alt="">
-                    <div class="position-relative p-4 pt-0">
-                        <div class="service-icon">
-                            <i class="fa fa-wifi fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Telecom and Broadband Solutions</h4>
-                        <p>Stay connected with our reliable telecom and broadband solutions tailored to your needs.</p>
-                       
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
+
 <!-- Service End -->
 
 
@@ -335,19 +293,13 @@
     </div>
 </div>
 <!-- Feature End -->
-
-
-   
-
-
-
     <!-- Team Start -->
-    @include('pages.team')
+    @include('layouts.team')
     <!-- Team End -->
 
 
     <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="text-danger">Testimonial</h6>
@@ -401,19 +353,19 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Testimonial End -->
 
 
 
-    @include('pages.footer')
+    @include('layouts.footer')
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i
             class="bi bi-arrow-up"></i></a>
 
 
-    @include('pages.script')
+    @include('layouts.script')
 </body>
 
 </html>

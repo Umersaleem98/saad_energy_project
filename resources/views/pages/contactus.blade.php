@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   @include('pages.head')
+   @include('layouts.head')
 </head>
 
 <body>
@@ -16,11 +16,11 @@
 
 
    
-    @include('pages.topbar')
+    @include('layouts.topbar')
     <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
-    @include('pages.navbar')
+    @include('layouts.navbar')
     <!-- Navbar & Hero End -->
     <!-- Navbar End -->
 
@@ -32,7 +32,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">layouts</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                 </ol>
             </nav>
@@ -104,8 +104,8 @@
     <a href="#" class="btn btn-lg btn-danger btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 
 
-    @include('pages.footer')
-    @include('pages.script')
+    @include('layouts.footer')
+    @include('layouts.script')
 </body>
 
 </html>

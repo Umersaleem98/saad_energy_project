@@ -3,7 +3,7 @@
 
 <head>
     <title>Partners</title>
-    @include('pages.head')
+    @include('layouts.head')
     <style>
         .hover-effect {
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -28,8 +28,8 @@
     <!-- Spinner End -->
 
     <!-- Topbar Start -->
-    @include('pages.topbar')
-    @include('pages.navbar')
+    @include('layouts.topbar')
+    @include('layouts.navbar')
     <!-- Topbar End -->
 
     <div class="container-fluid page-header py-5 mb-5">
@@ -38,7 +38,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">layouts</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Partners</li>
                 </ol>
             </nav>
@@ -65,14 +65,14 @@
 
 
 
-    @include('pages.footer')
+    @include('layouts.footer')
 
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
             class="fa fa-arrow-up"></i></a>
 
-    @include('pages.script')
+    @include('layouts.script')
 </body>
 
 </html>

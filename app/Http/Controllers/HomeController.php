@@ -19,11 +19,11 @@ class HomeController extends Controller
     public function about_us()
     {
         $teams = Team::all();
-        return view('aboutus', compact('teams'));
+        return view('pages.aboutus', compact('teams'));
     }
     public function contact_us()
     {
-        return view('contactus');
+        return view('pages.contactus');
     }
 
     public function submit(Request $request)
@@ -48,37 +48,37 @@ class HomeController extends Controller
 
     public function oursuppliers()
     {
-        return view('oursupplier');
+        return view('pages.oursupplier');
     }
 
     public function ourservices()
     {
         $services = Service::all();
-        return view('outservices', compact('services'));
+        return view('pages.outservices', compact('services'));
     }
     public function ourpartners()
     {
-        return view('ourpartner');
+        return view('pages.ourpartner');
     }
     
     public function energysolution()
     {
-        return view('energysolutions');
+        return view('pages.energysolutions');
     }
     public function businessinsurancesolution()
     {
-        return view('businessinsurancesolutions');
+        return view('pages.businessinsurancesolutions');
     }
     public function businesstelecomandbroadband()
     {
-        return view('businesstelecomandbroadbands');
+        return view('pages.businesstelecomandbroadbands');
     }
     public function businessfinance()
     {
-        return view('businessfinances');
+        return view('pages.businessfinances');
     }
     public function businessmerchantssolution()
     {
-        return view('businessmerchantssolutions');
+        return view('pages.businessmerchantssolutions');
     }
 }

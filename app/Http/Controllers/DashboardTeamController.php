@@ -76,6 +76,48 @@ class DashboardTeamController extends Controller
     }
 }
 
-    
+public function edit($id)
+{
+    $team = Team::find($id);
+    return view('admins.team.edit', compact('team'));
+}
+
+public function update(Request $request, $id)
+{
+    $team = Team::find($id);
+
+    // Check if a new image is uploaded
+    if ($request->hasFile('image')) {
+        // Delete the existing image if it exists
+        if ($team->image && file_exists(public_path('images/teams/' . $team->image))) {
+            unlink(public_path('images/teams/' . $team->image)); // Delete the old image
+        }
+
+        // Get the original name of the new image
+        $imageName = $request->image->getClientOriginalName();
+        // Move the new image to the public/images/teams directory
+        $request->image->move(public_path('images/teams'), $imageName);
+        // Set the new image path to be saved in the database
+        $imagePath = $imageName;
+    } else {
+        // Keep the existing image if no new image is uploaded
+        $imagePath = $team->image;
+    }
+
+    // Update the team member
+    $team->update([
+        'name' => $request->name,
+        'designation' => $request->designation,
+        'image' => $imagePath,  // Save the new or existing image path
+        'facebook' => $request->facebook,
+        'twitter' => $request->twitter,
+        'instagram' => $request->instagram,
+        'linkedin' => $request->linkedin,
+    ]);
+
+    // Redirect back with success message
+    return redirect()->back()->with('success', 'Team member updated successfully!');
+}
+
     
 }

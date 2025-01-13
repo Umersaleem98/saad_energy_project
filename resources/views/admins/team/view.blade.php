@@ -71,6 +71,11 @@
 
                                             <!-- Delete button -->
                                             <td>
+                                                <a href="{{ url('teams_edit/' . $item->id) }}" class="btn btn-danger btn-sm">
+                                                    Delete
+                                                </a>
+                                            </td>
+                                            <td>
                                                 <a href="{{ url('teams_destroy/' . $item->id) }}" class="btn btn-danger btn-sm">
                                                     Delete
                                                 </a>

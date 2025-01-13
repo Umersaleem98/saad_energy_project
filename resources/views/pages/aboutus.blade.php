@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('pages.head')
+    @include('layouts.head')
 </head>
 
 <body>
@@ -10,11 +10,11 @@
 
     <!-- Spinner End -->
 
-    @include('pages.topbar')
+    @include('layouts.topbar')
     <!-- Topbar End -->
 
     <!-- Navbar & Hero Start -->
-    @include('pages.navbar')
+    @include('layouts.navbar')
     <!-- Navbar & Hero End -->
 
     <!-- Header Start -->
@@ -36,7 +36,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">layouts</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">About</li>
                 </ol>
             </nav>
@@ -46,7 +46,7 @@
 
 
     <!-- Feature Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
@@ -91,32 +91,38 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!-- Feature Start -->
     
 
     <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="home/img/about.jpg" style="object-fit: cover;" alt="">
-                    </div>
+   <!-- About Us Section Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <!-- Top Heading -->
+    <div class="text-center py-4">
+        <h2 class="text-danger">About Us</h2>
+    </div>
+    
+    <div class="container about px-lg-0">
+        <div class="row g-0 mx-lg-0">
+            <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute img-fluid w-100 h-100" src="home/img/about.jpg" style="object-fit: cover;" alt="">
                 </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-danger">About Us</h6>
-                        <h1 class="mb-4">Here to help your business:</h1>
-                        <p>UK Marketing Services, a trusted partner delivers transformative solutions in Energy and Telecoms. Our expertise ensures tailored, cost-effective strategies, saving you money through strategic supplier negotiations and competitive rates. </p>
-                        <p>Reliability is our cornerstone, offering trustworthy service, minimal downtime, and unwavering connectivity. Choosing UK Marketing Services means exceptional service, cost efficiency, time savings, and customized solutions to propel your business forward.
-                        </p>
-                       
-                    </div>
+            </div>
+            <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
+                <div class="p-lg-5 pe-lg-0">
+                    {{-- <h6 class="text-danger">About Us</h6> --}}
+                    <h1 class="mb-4">Here to help your business:</h1>
+                    <p class="text-dark">UK Marketing Services, a trusted partner delivers transformative solutions in Energy and Telecoms. Our expertise ensures tailored, cost-effective strategies, saving you money through strategic supplier negotiations and competitive rates. </p>
+                    <p class="text-dark">Reliability is our cornerstone, offering trustworthy service, minimal downtime, and unwavering connectivity. Choosing UK Marketing Services means exceptional service, cost efficiency, time savings, and customized solutions to propel your business forward.
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+</div>
+
     <!-- About End -->
 <!-- New Section Start -->
 <div class="container-fluid">
@@ -125,8 +131,8 @@
             <!-- Left Side (Text) -->
             <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
                 <h2 class="mb-4">What we can do for you:</h2>
-                <p>Saving Your Business Precious time</p>
-                <p>Our tailored solutions, seamless services, and reliable support minimise hassle for you and maximise time to focus on what you do best!</p>
+                <p class="text-dark">Saving Your Business Precious time</p>
+                <p class="text-dark">Our tailored solutions, seamless services, and reliable support minimise hassle for you and maximise time to focus on what you do best!</p>
             </div>
 
             <!-- Right Side (Image) -->
@@ -149,12 +155,12 @@
 
             <!-- Right Side (Text) -->
             <div class="col-lg-6 wow text-dark" data-wow-delay="0.5s">
-                <h2 class="mb-4">Dedicated Account Managers</h2>
-                <p>Here at UK Marketing Services, we believe a human connection is essential for successful relationships. So, our customers are given dedicated managers with direct contact details!
+                <h2 class="mb-4 text-dark">Dedicated Account Managers</h2>
+                <p class="text-dark">Here at UK Marketing Services, we believe a human connection is essential for successful relationships. So, our customers are given dedicated managers with direct contact details!
                     Get In Contact
                     Helping You To Save Valuable Money
                     </p>
-                <p>Money saved means more money for you to reinvest in your business</p>
+                <p class="text-dark">Money saved means more money for you to reinvest in your business</p>
             </div>
         </div>
     </div>
@@ -163,7 +169,7 @@
 
 
     <!-- Team Start -->
-    <div class="container-xxl py-5">
+    {{-- <div class="container-xxl py-5">
         <div class="container">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                 <h6 class="text-danger">Team Member</h6>
@@ -174,7 +180,6 @@
                 <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item rounded overflow-hidden">
                         <div class="d-flex">
-                            {{-- <img src="{{ asset('teams/' . $item->image) }}" alt="teams" style="width: 100%; height: auto;"> --}}
                             <img src="{{ asset('images/teams/' . $item->image) }}" alt="teams">
 
                             <div class="team-social w-25">
@@ -193,11 +198,10 @@
             </div>
         </div>
     </div>
+     --}}
     
-    <!-- Team End -->
-
-    @include('pages.footer')
-    @include('pages.script')
+    @include('layouts.footer')
+    @include('layouts.script')
 </body>
 
 </html>

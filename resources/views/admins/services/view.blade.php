@@ -37,6 +37,7 @@
                                     <th>Icon</th>
                                     <th>Image</th>
                                     <th>Description</th>
+                                    <th>Edit</th>
                                     <th>Delete</th>
                                 </tr>
                             </thead>
@@ -56,6 +57,11 @@
                                         </td>
 
                                         <td>{{ $item->description }}</td>
+                                        <td>
+                                            <a href="{{ url('services_edit/' . $item->id) }}" class="btn btn-info btn-sm">
+                                                Edit
+                                            </a>
+                                        </td>
                                         <td>
                                             <a href="{{ url('services_destroy/' . $item->id) }}" class="btn btn-danger btn-sm">
                                                 Delete

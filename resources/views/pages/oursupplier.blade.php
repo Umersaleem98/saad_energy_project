@@ -3,7 +3,7 @@
 
 <head>
     <title>Supplier</title>
-    @include('pages.head')
+    @include('layouts.head')
     <style>
         .more-content {
             display: none;
@@ -20,8 +20,8 @@
             <span class="sr-only">Loading...</span>
         </div>
     </div>
-    @include('pages.topbar')
-    @include('pages.navbar')
+    @include('layouts.topbar')
+    @include('layouts.navbar')
 
     <!-- Header Start -->
     <div class="container-fluid page-header py-5 mb-5">
@@ -30,7 +30,7 @@
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                    <li class="breadcrumb-item"><a class="text-white" href="#">layouts</a></li>
                     <li class="breadcrumb-item text-white active" aria-current="page">Supplier</li>
                 </ol>
             </nav>
@@ -63,13 +63,13 @@
     </div>
     <!-- Contact End -->
 
-    @include('pages.footer')
+    @include('layouts.footer')
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-secondary btn-lg-square rounded-circle back-to-top"><i
             class="fa fa-arrow-up"></i></a>
 
-    @include('pages.script')
+    @include('layouts.script')
 
     <script>
         const toggleButton = document.getElementById('toggleButton');

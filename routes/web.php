@@ -42,10 +42,14 @@ Route::get('/message', [DashboardController::class, 'message_list']);
 Route::get('/services_create', [ServiceDashboardController::class, 'create']);
 Route::post('/services_store', [ServiceDashboardController::class, 'store']);
 Route::get('/services_view', [ServiceDashboardController::class, 'services_list']);
+Route::get('/services_edit/{id}', [ServiceDashboardController::class, 'edit']);
+Route::post('/services_update/{id}', [ServiceDashboardController::class, 'update']);
 Route::get('/services_destroy/{id}', [ServiceDashboardController::class, 'delete']);
 
 
 Route::get('/team_create', [DashboardTeamController::class, 'create']);
 Route::post('/team_store', [DashboardTeamController::class, 'store']);
 Route::get('/team_list', [DashboardTeamController::class, 'list']);
+Route::get('/teams_edit/{id}', [DashboardTeamController::class, 'edit']);
+Route::post('/teams_update/{id}', [DashboardTeamController::class, 'update']);
 Route::get('/teams_destroy/{id}', [DashboardTeamController::class, 'delete']);
