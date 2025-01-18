@@ -6,6 +6,26 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\DashboardTeamController;
 use App\Http\Controllers\ServiceDashboardController;
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/clear-all', function () {
+    // Clear application cache
+    Artisan::call('cache:clear');
+    // Clear route cache
+    Artisan::call('route:clear');
+    // Clear config cache
+    Artisan::call('config:clear');
+    // Clear view cache
+    Artisan::call('view:clear');
+    // Optional: Clear compiled files
+    Artisan::call('clear-compiled');
+    // Optional: Reset the application and reload autoload
+    Artisan::call('optimize:clear');
+
+    return response()->json([
+        'message' => 'All caches cleared successfully!',
+    ]);
+});
 
 
 Route::get('/', [HomeController::class, 'index']);
